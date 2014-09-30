@@ -85,7 +85,8 @@ int DateSeparate::daysinmonth(int x)
 		return 31;
 	else if (x == 2)
 	{
-		if (!(newset[2] % 400 != 0&&newset[2] %100==0)&& newset[2] % 4 == 0) // check if leap year (divisible by 4 except when divisible by 100 but not 400)
+		if (!(newset[2] % 400 != 0&&newset[2] %100==0)&& newset[2] % 4 == 0) // check if leap year
+						//(divisible by 4 except when divisible by 100 but not 400)
 			return 29;
 		else
 			return 28;
